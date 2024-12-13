@@ -23,8 +23,6 @@ def blink_steps(val, steps):
         end_get = end.get
         tree = [{} for _ in range(steps - max_steps)]
 
-        if isinstance(best, list):
-            print("list", best, val, max_steps, curr_known_ass)
         for b, count in best.items():
             e, t = blink_steps(b, steps - max_steps)  # end, tree
 

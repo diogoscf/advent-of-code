@@ -52,6 +52,6 @@ for file_id in np.unique(orig_order)[::-1]: # start from end
 
 total_p1 = np.sum([v*i for i,v in enumerate(final_values1.astype(np.int64))])
 total_p2 = np.sum(np.array([int(v*i) if not np.isnan(v) else 0 for i,v in enumerate(final_values2)]).astype(np.int64))
-np.savetxt("day9_outputsum.txt", [int(v*i) if not np.isnan(v) else 0 for i,v in enumerate(final_values2)], fmt="%s")
+# np.savetxt("day9_outputsum.txt", [int(v*i) if not np.isnan(v) else 0 for i,v in enumerate(final_values2)], fmt="%s")
 print(f"Part 1: {total_p1}")
 print(f"Part 2: {total_p2}")

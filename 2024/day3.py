@@ -11,7 +11,7 @@ matches = re.findall(pattern, txt)
 total1 = 0
 total2 = 0
 on = True
-print(matches)
+# print(matches)
 for (s, n1, n2) in matches:
     if s == "do()":
         on = True
@@ -20,7 +20,7 @@ for (s, n1, n2) in matches:
         on = False
         continue
 
-    print(n1, n2)
+    # print(n1, n2)
     total1 += int(n1) * int(n2)
     if on:
         total2 += int(n1) * int(n2)

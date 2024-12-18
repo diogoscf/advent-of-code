@@ -3,7 +3,7 @@ import numpy as np
 from operator import mul, add
 from itertools import product
 
-filename = "day7.txt"
+filename = "day07.txt"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 eqs = [[int(n.strip(":")) for n in l.split(" ")] for l in txt.split("\n")]
 

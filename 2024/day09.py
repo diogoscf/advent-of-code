@@ -2,7 +2,7 @@ import os
 import numpy as np
 from itertools import zip_longest
 
-filename = "day9.txt"
+filename = "day09.txt"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 # txt = "2333133121414131402"
 txt_arr = np.array(list(txt), dtype=np.int64)

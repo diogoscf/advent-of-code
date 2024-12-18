@@ -1,7 +1,7 @@
 import os
 import numpy as np
 
-filename = "day5.txt"
+filename = "day05.txt"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 
 rules, orders = [p.split("\n") for p in txt.split("\n\n")]

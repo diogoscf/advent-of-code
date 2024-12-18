@@ -1,7 +1,7 @@
 import os
 import numpy as np
 
-filename = "day6.txt"
+filename = "day06.txt"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 loc_grid = np.array([list(l) for l in txt.split("\n")])
 

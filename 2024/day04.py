@@ -2,7 +2,7 @@ import os
 import numpy as np
 import re
 
-filename = "day4.txt"
+filename = "day04.txt"
 # pattern = r"(XMAS|SMAX)"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 as_array = np.array([list(l) for l in txt.split("\n")])

@@ -2,7 +2,7 @@ import os
 import numpy as np
 import itertools
 
-filename = "day8.txt"
+filename = "day08.txt"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 grid = np.array([list(l) for l in txt.split("\n")])
 node_grid1 = np.full(grid.shape, ".")

@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 
-filename = "day2.txt"
+filename = "day02.txt"
 
 data = pd.read_csv(os.path.join(os.path.dirname(__file__), filename), sep=" ", header=None).to_numpy()
 rows = data.tolist()

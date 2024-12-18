@@ -4,7 +4,7 @@ import re
 
 pattern = r"(mul\((\d+),(\d+)\)|do\(\)|don't\(\))"
 
-filename = "day3.txt"
+filename = "day03.txt"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 
 matches = re.findall(pattern, txt)

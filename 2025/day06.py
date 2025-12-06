@@ -5,11 +5,6 @@ import re
 filename = "day06.txt"
 txt = open(os.path.join(os.path.dirname(__file__), filename)).read()
 
-txtt = """123 328  51 64 
- 45 64  387 23 
-  6 98  215 314
-*   +   *   +  """
-
 lines = txt.split("\n")
 col_starts = [m.start() for m in re.finditer(r"(\+|\*)", lines[-1])]
 problems = np.array([[l[i : j - 1] for i, j in zip(col_starts, col_starts[1:] + [len(l) + 1])] for l in lines]).T
